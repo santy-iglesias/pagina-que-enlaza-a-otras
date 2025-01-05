@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    background-color: #404155;
+    font-family: montserrat;
+    overflow: hidden;
+
+    /* Variables: */
+    --color-del-texto: #fff;
+    --color-de-fondo-de-nav: #302c2c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.encabezado {
+    position: sticky;
+    top: 0;
+}
+
+/* ------------------------------------------------ Header --------------------------------------------------------------------------------------*/
+
+.fondo-header {
+    background-image: url("Imagenes/internet-mundo2.jpg");
+    background-size: cover;
+    background-position: 0 590px;
+}
+
+.capa-oscura {
+    width: 100%;
+    height: 100%;
+    background-color: #000c;
+}
+
+header {
+    /* background-color: #111; */
+    text-align: center;
+    padding: 45px 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header a {
+    padding: 16px 23px;
+    text-decoration: none;
+    color: var(--color-del-texto);
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+
+/* ------------------------------------------------- Barra de navegacion -----------------------------------------------------------------------*/
+
+nav ul {
+    display: flex;
+    background-color: var(--color-de-fondo-de-nav);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--color-del-texto);
+    font-weight: 800;
+}
+
+
+
+/* Para todos los "links": */
+
+a:hover {
+    background-color: #444;
+    color: var(--color-del-texto);
+}
+
+
+
+
+
+/* -------------------------------------------------- Parte principal de la pagina ---------------------------------------------------------------*/
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-direction: row;
+
+    max-width: 100%;
+    padding: 0 60px;
+    padding-right: 0;
+}
+
+.temas {
+    min-width: 22%;
+    max-height: fit-content;
+}
+
+main {
+    max-height: 77dvh;
+}
+
+.temas {
+    padding: 21px 30px;
+}
+
+
+
+
+/* ---------------------------------------------------- Barra de navegacion secundaria -----------------------------------------------------------*/
+
+.temas {
+    color: var(--color-del-texto);
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--color-de-fondo-de-nav);
+    margin-top: 88px;
+}
+
+.temas h2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.temas ul {
+    padding: 0;
+}
+
+.temas ul li {
+    list-style: none;
+}
+
+
+/* ---------------------------------------------------------- Main -------------------------------------------------------------------------------*/
+
+main {
+    color: var(--color-del-texto);
+    overflow-y: scroll;
+    min-height: 80.8dvh;
+    scrollbar-color: var(--color-del-texto) transparent;
+    padding-right: 13px;
+    margin-left: 50px;
+    padding: 40px 65px 21px 40px;
+    margin-top: 0;
+}
+
+main h1 {
+    font-size: 55px;
+}
+
+main .titulo {
+    font-size: 45px;
+    margin-top: 75px;
+}
+
+main .titulo1 {
+    margin-top: 0;
+}
+
+.subtitulo {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin: 35px 0;
+    font-size: 19px;
+}
+
+.subtitulo + p {
+    margin-top: 25px;
+}
