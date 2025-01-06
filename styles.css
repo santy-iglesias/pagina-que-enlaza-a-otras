@@ -5,7 +5,8 @@ body {
     overflow: hidden;
 
     /* Variables: */
-    --color-del-texto: #fff;
+    --color-titulos: #fff;
+    --color-del-texto: #efefef;
     --color-de-fondo-de-nav: #302c2c;
 }
 
@@ -145,20 +146,23 @@ main {
     overflow-y: scroll;
     min-height: 80.8dvh;
     scrollbar-color: var(--color-del-texto) transparent;
-    padding-right: 13px;
-    margin-left: 50px;
-    padding: 40px 65px 21px 40px;
+    margin-left: 70px;
+    padding: 40px 85px 21px 60px;
     margin-top: 0;
 }
 
-main .titulo {
+.titulo {
+    color: var(--color-titulos);
     font-size: 45px;
-    margin-top: 75px;
+    padding: 23px 0;
+    margin-top: 68px;
+    margin-bottom: 0;
+    text-wrap: balance;
 }
 
-main .titulo1 {
+.titulo1 {
+    margin: 0;
     font-size: 55px;
-    margin-top: 18px;
 }
 
 .subtitulo {
@@ -166,11 +170,15 @@ main .titulo1 {
     margin-bottom: 15px;
 }
 
-main p {
-    margin: 47px 0;
-    font-size: 21px;
+p {
+    margin: 40px 0;
+    font-size: 23px;
     padding-right: 40px;
     text-wrap: pretty;
+}
+
+.titulo + p {
+    margin-top: 15px;
 }
 
 .subtitulo + p {
@@ -179,9 +187,31 @@ main p {
 
 cite {
     font-size: 22px;
-    margin: 40px 0;
     padding: 8px;
     padding-left: 20px;
     border-left: 8px solid var(--color-de-fondo-de-nav);
     font-weight: 600;
+}
+
+.parrafo-antes-cita {
+    margin-bottom: 49px;
+}
+
+.parrafo-despues-cita {
+    margin-top: 49px;
+}
+
+main ul {
+    padding-left: 25px;
+}
+
+main ul li {
+    margin: 40px 0;
+    font-size: 23px;
+    letter-spacing: 0.2px;
+}
+
+span {
+    font-weight: 700;
+    color: #fff;
 }
