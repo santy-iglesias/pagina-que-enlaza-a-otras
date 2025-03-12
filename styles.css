@@ -9,6 +9,12 @@ body {
     --color-del-texto: #efefef;
     --color-de-fondo-de-nav: #302c2c;
     --altura-de-linea: 1.5;
+
+    --color-codigo: #112;
+    --tamaño-fuente-codigo: 16px;
+    --tamaño-letra-cita: 20px;
+    --color-letra-cita-y-aclaracion: #d8d8d8;
+    --tamaño-letra: 22px;
 }
 
 * {
@@ -38,7 +44,6 @@ body {
 }
 
 header {
-    /* background-color: #111; */
     text-align: center;
     padding: 45px 0;
     font-size: 40px;
@@ -71,7 +76,7 @@ nav ul li {
     margin: 0 20px;
 }
 
-li a {
+nav a, .temas a {
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -80,13 +85,22 @@ li a {
     transition: background-color .6s;
 }
 
-
-
-/* Para todos los "links": */
-
-a:hover {
+nav a:hover, .temas a:hover {
     background-color: #444;
     color: var(--color-del-texto);
+}
+
+
+
+
+/* Links: */
+
+p a {
+    color: #0cf;
+}
+
+p a:hover {
+    background-color: var();
 }
 
 
@@ -161,63 +175,93 @@ main {
     margin-top: 0;
 }
 
+main img {
+    width: 100%;
+}
+
+
+
+
+/* Parrafos, titulos y subtitulos: */
+
 .titulo {
     color: var(--color-titulos);
     font-size: 45px;
     padding: 0;
     padding-top: 30px;
     margin-top: 68px;
-    margin-bottom: 0;
+    margin-bottom: 33px;
     text-wrap: balance;
 }
 
 .titulo1 {
-    margin: 0;
+    margin-top: 0;
     font-size: 55px;
 }
 
 .subtitulo {
     font-size: 30px;
-    margin-bottom: 15px;
+    margin: 60px 0 5px 0;
 }
 
 p {
-    margin: 40px 0;
-    font-size: 23px;
+    margin: 30px 0;
+    font-size: var(--tamaño-letra);
     padding-right: 40px;
     text-wrap: pretty;
     line-height: var(--altura-de-linea);
 }
 
-.titulo + p {
-    margin-top: 15px;
+h4 {
+    font-size: var(--tamaño-letra);
+
 }
 
-.subtitulo + p {
-    margin-top: 25px;
-}
 
-cite {
-    font-size: 22px;
+
+
+/* Citas / Aclaraciones: */
+
+.cita, .aclaracion {
+    margin: 61px 0;
+    font-size: var(--tamaño-letra-cita);
     padding: 8px;
     padding-left: 20px;
     border-left: 8px solid var(--color-de-fondo-de-nav);
     font-weight: 600;
+    color: var(--color-letra-cita-y-aclaracion);
+    font-style: italic;
+    line-height: 28px;
 }
 
-.parrafo-antes-cita {
-    margin-bottom: 51px;
+.aclaraciones {
+    border-left: 8px solid var(--color-de-fondo-de-nav);
+    padding: 8px;
+    padding-left: 20px;
+    font-style: italic;
+    color: var(--color-letra-cita-y-aclaracion);
 }
 
-.parrafo-despues-cita {
-    margin-top: 51px;
+.aclaracion-1, .aclaracion-2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: var(--tamaño-letra-cita);
 }
 
-.lista-terminos {
+.aclaracion-1 {
+    margin-bottom: 35px;
+}
+
+
+
+
+/* Listas: */
+
+.terminos, .caracteristicas {
     padding-left: 25px;
 }
 
-.lista-terminos li {
+.terminos li, .caracteristicas li {
     margin: 40px 0;
     font-size: 23px;
     letter-spacing: 0.2px;
@@ -228,6 +272,46 @@ span {
     font-weight: 700;
     color: #fff;
 }
+
+
+
+/* Codigo: */
+
+.codigo {
+    background-color: var(--color-codigo);
+    padding: 30px;
+    padding-right: 35px;
+    font-size: var(--tamaño-fuente-codigo);
+    border-radius: 10px;
+}
+
+.codigo p {
+    padding: 0;
+    margin: 10px 0;
+    font-size: var(--tamaño-fuente-codigo);
+}
+
+
+
+/* Colores: */
+
+.verde-claro {
+    color: #de0;
+}
+
+.amarillo {
+    color: #f9f639;
+}
+
+.celeste {
+    font-weight: 400;
+    color: #0cf;
+}
+
+
+
+
+/* Footer: */
 
 .footer {
     text-align: center;
